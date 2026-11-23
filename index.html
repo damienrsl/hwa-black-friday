@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>HWA Black Friday : ton script</title>
+<title>HWA Black Friday : ce que la marque attend</title>
 <style>
 /* KIT ARTEFACT « TOKN » — le nouveau Tokn (forme v06 Graphite, choisie par Damien le 22/11/2026), appliqué aux artefacts.
    CHARTE v0 PROVISOIRE (22/11/2026) : se fige (lecture seule + empreinte) quand Damien a répondu aux questions de cadrage.
@@ -166,453 +166,84 @@ body.tokn .fond-bouton{position:fixed;right:12px;bottom:12px;z-index:60;backgrou
 body.tokn .fond-bouton:hover{opacity:1;color:var(--texte)}
 @media(prefers-reduced-motion:reduce){body.tokn .orbes i{animation:none}}
 
-/* GABARIT « Récit » (v1-A) : lecture longue. Colonne de texte confortable (≤ 62 caractères), notes en marge, photos à intervalles IRRÉGULIERS (pleine largeur, demi-page, large, aucune). Aucune animation. */
-body.g-recit main{max-width:none;padding:0 0 120px;overflow-x:clip}
-body.g-recit .lis-nav{display:none}
-body.g-recit .une,body.g-recit .texte{max-width:1180px;margin:0 auto;padding-left:clamp(20px,5vw,56px);padding-right:clamp(20px,5vw,56px);box-sizing:border-box}
-body.g-recit .une{padding-top:clamp(40px,7vw,100px)}
-body.g-recit .une h1{font-size:clamp(40px,6.6vw,96px);line-height:.98;letter-spacing:-.04em;max-width:13ch;margin:18px 0 28px}
-body.g-recit .chapo{font-size:clamp(20px,2.2vw,30px);line-height:1.38;color:var(--texte-2);max-width:34ch;margin:0}
-body.g-recit figure{margin:0}
-body.g-recit figure img{display:block;width:100%;height:100%;object-fit:cover;border-radius:var(--r-l)}
-body.g-recit figcaption{font:500 13px var(--police-mono);letter-spacing:.04em;color:var(--texte-3);margin-top:12px;max-width:60ch}
-body.g-recit .une figure{margin-top:clamp(36px,5vw,64px)}
-body.g-recit .une figure img{aspect-ratio:21/9}
-body.g-recit .texte section{display:block;margin:clamp(64px,9vw,128px) 0 0;padding:0}
-body.g-recit .texte section>.etiquette{display:block;background:none;border:0;padding:0;margin:0 0 16px;font-size:13px}
-body.g-recit h2{font-size:clamp(30px,3.6vw,52px);line-height:1.06;letter-spacing:-.03em;max-width:18ch;margin:0 0 30px}
-body.g-recit .texte p{font-size:clamp(18px,1.55vw,21px);line-height:1.75;max-width:62ch;margin:0 0 1.15em;color:var(--texte-2)}
-body.g-recit .texte p b{color:var(--texte)}
-body.g-recit p.lettrine::first-letter{font-family:var(--large);font-weight:600;float:left;font-size:4.6em;line-height:.8;padding:.07em .12em 0 0;color:var(--texte)}
-body.g-recit .note{float:right;clear:right;width:250px;margin:4px 0 24px 0;padding-top:12px;border-top:1px solid var(--bord-fort);font-size:15px;line-height:1.5;color:var(--texte-2)}
-body.g-recit .note .etiquette{display:block;margin-bottom:6px}
-body.g-recit .demi{display:grid;grid-template-columns:minmax(0,62ch) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:start;margin:0 0 1.15em}
-body.g-recit .demi figure img{aspect-ratio:4/5}
-body.g-recit .large{margin:clamp(40px,6vw,80px) 0 0}
-body.g-recit .large img{aspect-ratio:16/8}
-body.g-recit .pleine{margin:clamp(56px,8vw,110px) calc(50% - 50vw) 0;width:100vw}
-body.g-recit .pleine img{aspect-ratio:21/9;border-radius:0}
-body.g-recit .pleine figcaption{padding:0 clamp(20px,5vw,56px)}
-body.g-recit .mot{font-family:var(--large);font-weight:600;font-size:clamp(32px,5.2vw,76px);line-height:1.03;letter-spacing:-.035em;max-width:15ch;margin:clamp(56px,8vw,110px) 0 0;padding-left:clamp(20px,3vw,36px);border-left:3px solid var(--accent);color:var(--texte)}
-body.g-recit .stat{display:flex;align-items:baseline;gap:clamp(16px,3vw,40px);margin:12px 0 36px}
-body.g-recit .stat b{font-family:var(--large);font-weight:600;font-size:clamp(88px,14vw,200px);line-height:.85;letter-spacing:-.05em}
-body.g-recit .stat span{font-size:clamp(18px,1.6vw,22px);line-height:1.45;max-width:26ch;color:var(--texte-2)}
-body.g-recit .puces{margin-top:8px}
-@media(max-width:1000px){body.g-recit .note{float:none;width:auto;margin:0 0 24px;padding:4px 0 4px 16px;border-top:0;border-left:3px solid var(--bord-fort)}body.g-recit .demi{grid-template-columns:1fr}body.g-recit .demi figure img{aspect-ratio:4/3}}
-/* commun aux versions v1 : tableau des fibres, crédits */
-body.tokn table.fib{width:100%;max-width:none;border-collapse:collapse;margin:8px 0 0}
-body.tokn table.fib th,body.tokn table.fib td:not(:first-child),body.tokn table.fib td{text-align:left;width:auto;font-size:1rem;font-weight:400;padding:13px 12px;color:var(--texte-2);letter-spacing:0;border-radius:0}
-body.tokn table.fib td:first-child{font-weight:600;color:var(--texte);font-size:1.05rem}
-body.tokn table.fib tr:nth-child(even) td{background:none}
-body.tokn .credits{padding:32px 0 0;font-size:13px;color:var(--texte-3);line-height:1.7;max-width:none}
-body.g-recit .texte p.credits{font-size:13px;line-height:1.7;color:var(--texte-3);max-width:none;margin-top:48px}
-/* fond vivant : Récit = 2 orbes, côté droit, plus doux (le texte reste en lecture calme) */
-body.g-recit .orbes i{--o:.6}
-body.g-recit .orbes i:nth-child(1){--x:50vw;--y:-30vh}
-body.g-recit .orbes i:nth-child(2){--x:46vw;--y:44vh}
-body.g-recit .orbes i:nth-child(3){display:none}
-@media(max-width:900px){body.g-recit .orbes i{--o:.42}}
-body.g-recit .deux{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 1.15em}
-body.g-recit .deux figure img{aspect-ratio:4/3}
-@media(max-width:700px){body.g-recit .deux{grid-template-columns:1fr}}
-body.g-recit .texte p.mot{font-family:var(--large);font-weight:600;font-size:clamp(32px,5.2vw,76px);line-height:1.03;letter-spacing:-.035em;max-width:15ch;margin:clamp(56px,8vw,110px) 0 0;padding-left:clamp(20px,3vw,36px);border-left:3px solid var(--accent);color:var(--texte)}
-body.g-recit .stat{flex-wrap:wrap}
-body.g-recit .stat b{white-space:nowrap;font-size:clamp(64px,14vw,200px)}
-body.g-recit .texte p.lead{font-size:clamp(22px,2.2vw,30px);line-height:1.35;color:var(--texte);font-weight:500;max-width:34ch;margin:0 0 1.2em}
-/* Récit : photos en noir et blanc bleuté (duotone sans mélange : image grise semi-transparente sur fond bleu) ; filet bleu sur le paragraphe en cours de lecture (« tu es ici ») */
-body.g-recit figure{background:#0a2290}
-body.g-recit figure img{filter:grayscale(1) contrast(1.08);opacity:.8}
-body.g-recit .texte p{position:relative}
-body.g-recit .texte p::before{content:"";position:absolute;left:-24px;top:.35em;bottom:.35em;width:3px;border-radius:2px;background:var(--accent);opacity:0;transform:scaleY(.3);transition:opacity .3s ease,transform .3s ease}
-body.g-recit .texte p.lu::before{opacity:1;transform:none}
-body.g-recit .texte p.mot::before,body.g-recit .texte p.credits::before,body.g-recit .texte p.lead::before{display:none}
-@media(max-width:700px){body.g-recit .texte p::before{left:-14px}}
-/* ---- Récit v2 : page de titre CENTRÉE, bandeau photo pleine largeur, colonne centrée, chapitres qui s'ouvrent au centre (le contraire du collage asymétrique de la Planche) ---- */
-body.g-recit .une{text-align:center;padding-top:clamp(70px,13vh,150px);padding-bottom:clamp(40px,7vh,80px)}
-body.g-recit .une h1{margin:24px auto 28px;max-width:15ch;font-size:clamp(40px,6vw,88px)}
-body.g-recit .une .chapo{margin:0 auto;max-width:30ch}
-body.g-recit .bandeau{margin:0;width:100%}
-body.g-recit .bandeau img{width:100%;aspect-ratio:21/8;object-fit:cover;border-radius:0}
-body.g-recit .bandeau figcaption{text-align:center;max-width:none;margin:12px auto 0;padding:0 20px}
-body.g-recit .texte section>.etiquette{text-align:center}
-body.g-recit .texte section>h2{text-align:center;margin-left:auto;margin-right:auto;max-width:16ch;font-size:clamp(34px,4.4vw,64px)}
-body.g-recit .texte section>*:not(figure):not(.note):not(.demi):not(.stat):not(table):not(.deux):not(h2):not(.etiquette){margin-left:auto;margin-right:auto}
-body.g-recit .texte section>.stat{justify-content:center;max-width:62ch;margin-left:auto;margin-right:auto}
-body.g-recit .texte section>table{margin-left:auto;margin-right:auto;max-width:760px}
-body.g-recit .texte section>.demi,body.g-recit .texte section>.deux{max-width:1000px;margin-left:auto;margin-right:auto}
-body.g-recit .texte section>p.mot{max-width:18ch}
-body.g-recit figcaption{color:var(--texte-2);font-size:13.5px}
-body.g-recit .texte p.credits{text-align:center;margin-left:auto;margin-right:auto;font-size:13.5px;color:var(--texte-2)}
-body.g-recit .texte p.lead{margin-left:auto;margin-right:auto;text-align:center}
-
-/* Récit : barre de LECTURE fixe (le chapitre en cours + le pourcentage lu), figure « demi » dans la marge comme les notes, tout sur la même colonne */
-body.g-recit .barre-lecture{position:fixed;top:0;left:0;right:0;z-index:45;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px clamp(20px,4vw,56px);background:rgba(18,19,22,.96);border-bottom:1px solid var(--bord);font:600 13px var(--police-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--texte-2)}
-body.g-recit .barre-lecture b{color:var(--texte);font-weight:600;text-align:center;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-body.g-recit .une{padding-top:clamp(110px,16vh,170px)}
-body.g-recit .demi{display:block;max-width:none;margin:0}
-body.g-recit .demi figure{float:right;clear:right;width:min(300px,28%);margin:4px 0 18px 0}
-body.g-recit .demi figure img{aspect-ratio:4/5}
-body.g-recit .texte section>table{max-width:62ch}
-body.g-recit figcaption{color:#fff}
-body.g-recit .bandeau figcaption{color:var(--texte)}
-@media(max-width:1000px){body.g-recit .demi figure{float:none;width:100%;margin:0 0 20px}body.g-recit .barre-lecture span:first-child{display:none}}
-body.g-recit .texte section>.etiquette{font:600 clamp(24px,2.6vw,34px)/1 var(--large);letter-spacing:.14em;text-transform:none;color:var(--texte-3);margin-bottom:22px}
-body.g-recit .barre-lecture{font-size:14px}
-body.g-recit .note .etiquette{font:600 14px var(--police-mono);letter-spacing:.09em;text-transform:uppercase}
-body.g-recit table.fib th{color:var(--texte-2);font-size:13.5px}
-/* une seule colonne : le bloc « demi » suit la même colonne, sa photo sort dans la marge comme les notes */
-body.g-recit .demi{max-width:62ch;margin-left:auto;margin-right:auto}
-body.g-recit .demi figure{width:300px;margin:4px -352px 18px 24px}
-@media(max-width:1180px){body.g-recit .demi figure{float:none;width:100%;margin:0 0 20px}}
-
 </style>
 <style>
-
-/* ---- composants de la page (couleurs, polices et rayons : variables du kit Tokn) ---- */
-body.g-recit .texte .zone{max-width:780px}
-.saut{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
-.saut a{font:600 13px var(--police-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--texte);text-decoration:none;border:1px solid var(--bord-fort);border-radius:var(--r-pilule);padding:0 16px;min-height:44px;display:inline-flex;align-items:center;background:var(--surf)}
-#statut{font:500 14px var(--police-mono);letter-spacing:.03em;color:var(--texte-3);margin:22px 0 0}
-body.g-recit .texte .zone p.sm,body.g-recit .texte p.sm{font-size:14px;line-height:1.5;color:var(--texte-3);max-width:60ch}
-body.g-recit .texte .zone p{max-width:none}
-.texte .tl{border-left:1px solid var(--bord-fort);margin:8px 0 0 4px}
-.texte .tl div{padding:0 0 18px 20px;position:relative;font-size:17px;line-height:1.55;color:var(--texte-2)}
-.texte .tl div::before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
-.texte .tl b{color:var(--texte)}
-.texte details.gd{background:var(--panneau);border:1px solid var(--bord);border-radius:var(--r-l);padding:0 18px;margin:0 0 12px}
-.texte details.gd[open]{border-color:var(--bord-fort);padding-bottom:16px}
-.texte details.gd>summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:center;min-height:64px;font:600 19px/1.2 var(--large);letter-spacing:-.02em;color:var(--texte)}
-.texte details.gd>summary::-webkit-details-marker{display:none}
-.texte details.gd>summary .gc{margin-left:auto;font:500 13px var(--police-mono);letter-spacing:.04em;color:var(--texte-3);text-transform:uppercase;text-align:right;white-space:nowrap}
-.texte details.gd>summary::after{content:"+";font:500 26px var(--police);color:var(--accent-texte);width:24px;text-align:center}
-.texte details.gd[open]>summary::after{content:"–"}
-.texte .grp{display:flex;flex-direction:column;gap:10px}
-.texte .f{background:var(--surf);border:1px solid var(--bord);border-radius:var(--r-m);padding:14px;display:flex;flex-direction:column;gap:10px}
-.texte .f.dire{border-color:#7bd9a0}.texte .f.non{opacity:.55}.texte .f.q{border-color:#f2c14e}
-.texte .f .t{font-size:17px;line-height:1.5;color:var(--texte)}
-.texte .f .src{font:500 14px var(--police-mono);color:var(--texte-3)}
-.texte .bt{display:flex;gap:8px;flex-wrap:wrap}
-.texte button{font:600 14px var(--police);color:var(--texte);background:transparent;border:1px solid var(--bord-fort);border-radius:var(--r-pilule);padding:0 16px;min-height:44px;cursor:pointer}
-.texte button[aria-pressed="true"],.texte button.plein{background:var(--accent-plein);border-color:var(--accent-plein);color:#fff}
-.texte button:focus-visible,.texte textarea:focus-visible,.texte input:focus-visible,.texte summary:focus-visible,.saut a:focus-visible,#prompteur button:focus-visible{outline:2px solid var(--accent-texte);outline-offset:2px}
-.texte details.n>summary{cursor:pointer;font-size:15px;color:var(--accent-texte);min-height:36px;display:flex;align-items:center}
-.texte details.n>summary.rempli::after{content:" · note écrite";color:var(--texte-3)}
-.texte textarea,.texte input[type=number]{width:100%;background:var(--fond);color:var(--texte);border:1px solid var(--bord-fort);border-radius:var(--r-m);padding:12px;font:16px/1.5 var(--police)}
-.texte textarea{min-height:76px;resize:vertical}
-.texte .opts{display:flex;flex-direction:column;gap:8px}
-.texte .opts button{text-align:left;border-radius:var(--r-m);padding:10px 14px;line-height:1.4;font-weight:500;font-size:16px}
-.texte .deux{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0}
-@media(max-width:600px){.texte .deux{grid-template-columns:1fr}}
-.texte .le{display:flex;flex-direction:column;gap:6px}
-.texte .bloc{background:var(--panneau);border:1px solid var(--bord);border-radius:var(--r-l);padding:18px;display:flex;flex-direction:column;gap:12px;margin:0 0 14px}
-.texte .bloc .hd{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
-.texte .bloc h3{font:600 22px/1.15 var(--large);letter-spacing:-.025em;margin:0}
-.texte .bloc .q{font-size:17px;line-height:1.5;color:var(--texte-2);border-left:2px solid var(--accent);padding-left:12px;margin:0}
-.texte .cnt{font:500 14px var(--police-mono);color:var(--texte-3)}.texte .cnt.warn{color:#f2c14e}
-.texte .chips{display:flex;gap:8px;flex-wrap:wrap}
-.texte .chip{font:500 14px var(--police);border:1px solid var(--bord);border-radius:var(--r-pilule);padding:5px 12px;color:var(--texte-3)}
-.texte .chip.ok{border-color:#7bd9a0;color:#7bd9a0}
-.texte .lint{font-size:15px;color:#ff8f8f}
-.texte .lbl{font:600 14px var(--police-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--texte-3)}
-.texte .jauge{position:sticky;bottom:56px;background:var(--surf);border:1px solid var(--accent);border-radius:var(--r-l);padding:14px 16px;z-index:5;display:flex;flex-direction:column;gap:10px;margin-top:18px}
-.texte .barre{height:10px;border-radius:var(--r-pilule);background:var(--fond);overflow:hidden;border:1px solid var(--bord)}
-.texte .barre i{display:block;height:100%;background:#7bd9a0;width:0}
-.texte .jauge .ligne{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;font-size:16px;color:var(--texte)}
-.texte .actions{display:flex;gap:8px;flex-wrap:wrap}
-.texte .q-l{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--bord);font-size:17px;line-height:1.5;color:var(--texte-2);cursor:pointer}
-.texte .q-l input{width:26px;height:26px;margin-top:1px;flex:none;accent-color:#4f7dff}
-.texte .avis{border:1px solid #f2c14e;border-radius:var(--r-l);padding:18px;background:var(--panneau);display:flex;flex-direction:column;gap:10px;margin-top:24px}
-.texte .avis ul,.texte .carte ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.55;color:var(--texte-2)}
-.texte .avis li b,.texte .carte li b{color:var(--texte)}
-.texte .carte{background:var(--panneau);border:1px solid var(--bord);border-radius:var(--r-l);padding:18px;display:flex;flex-direction:column;gap:10px}
-.texte .pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:8px 0 16px}
-.texte .pal div{border:1px solid var(--bord);border-radius:var(--r-m);overflow:hidden;background:var(--surf)}
-.texte .pal i{display:block;height:64px}
-.texte .pal span{display:block;padding:8px 10px;font:500 14px/1.35 var(--police-mono);color:var(--texte-2)}
-#prompteur{position:fixed;inset:0;background:#000;color:#fff;z-index:90;display:none;flex-direction:column}
-#prompteur.on{display:flex}
-#prompteur .top{display:flex;gap:8px;padding:12px;flex-wrap:wrap;align-items:center;border-bottom:1px solid #333}
-#prompteur button{font:600 14px var(--police);color:#fff;background:transparent;border:1px solid #666;border-radius:999px;padding:0 16px;min-height:44px}
-#prompteur button[aria-pressed="true"]{background:var(--accent-plein);border-color:var(--accent-plein)}
-#prompteur .txt{flex:1;overflow-y:auto;padding:24px 20px 60vh;font:600 clamp(28px,7vw,44px)/1.3 var(--police);white-space:pre-wrap}
-
+body.tokn .cite{font-size:17px;line-height:1.5;color:var(--texte-3);font-style:italic;margin:6px 0 0;max-width:62ch}
+body.tokn .moi{border-left:3px solid #f2c14e;padding:10px 14px;margin:10px 0 0;background:rgba(242,193,78,.08);border-radius:0 var(--r-m) var(--r-m) 0;font-size:17px;line-height:1.5;color:var(--texte-2);max-width:62ch}
+body.tokn .moi b{color:#f2c14e}
+body.tokn .non{border-left:3px solid #ff8f8f;padding:10px 14px;margin:10px 0 0;background:rgba(255,143,143,.08);border-radius:0 var(--r-m) var(--r-m) 0;font-size:17px;line-height:1.5;color:var(--texte-2);max-width:62ch}
+body.tokn .non b{color:#ff8f8f}
+body.tokn .spec li,body.tokn .spec p{font-size:18px;line-height:1.55;color:var(--texte-2)}
+body.tokn .spec h3{font-size:22px}
+body.tokn .spec .num{font-size:14px}
+body.tokn .chiffre p{font-size:18px;line-height:1.5;color:var(--texte-2)}
+body.tokn .chiffre .gros{min-width:104px;font-size:32px}
+body.tokn .carte{margin-bottom:14px}
+body.tokn .hero h1{max-width:18ch}
+body.tokn .petit{font-size:15px;line-height:1.5;color:var(--texte-3);margin:12px 0 0;max-width:62ch}
 </style></head>
-<body class="tokn g-recit">
+<body class="tokn">
 <div class="orbes" aria-hidden="true"><i></i><i></i><i></i></div>
 <div class="lis-progres" aria-hidden="true"></div>
-<!--gabarit:recit-->
 <main>
-<div class="barre-lecture" aria-hidden="true"><span>HWA · Black Friday</span><b id="chap-nom">Ton script Black Friday HWA</b><span id="pct">0 %</span></div>
-<header class="une"><span class="etiquette">Human With Attitude · co-ad Black Friday</span><h1>Ton script Black Friday HWA</h1>
-<p class="chapo">La marque a écrit le cadre. Les mots, c'est toi : lis, note à côté de chaque info, puis écris ton script. Tout s'enregistre ici.</p>
-<p id="statut" role="status">Chargement…</p></header>
-<div class="texte">
-<nav class="saut" aria-label="Sauts"><a href="#cadre">Le cadre</a><a href="#lecons">Ce qui plaît</a><a href="#da">Direction artistique</a><a href="#script">Ton script</a><a href="#regler">À régler</a></nav>
 
-<section id="cadre"><span class="etiquette">1 · Le cadre de la marque</span><h2>Ce que HWA demande</h2>
-<div class="stat"><b id="cdn">4</b><span id="cd">jours avant le drop</span></div>
-<div class="stat"><b>45 s</b><span>maximum, vertical 9:16, un Reel Instagram. Version du 19/11, la plus récente.</span></div>
-<aside class="note"><span class="etiquette">À savoir</span>« You-man » with Attitude, jamais « Who-man » : rappelé le 15/09, le 17/11 et le 19/11.</aside>
-<p>Cinq mails et un PDF de la marque, relus. Voici ce qui est écrit, et ce qui manque.</p>
-<div class="zone"><div class="carte"><span class="lbl">Ce que j'ai lu</span>
-<div class="tl">
-<div><b>17/11</b> · mail « DAMIEN X HWA » (Sarah) avec le PDF « Brief co-ad Black Friday » : concept, 4 sujets obligatoires, direction vidéo.</div>
-<div><b>18/11</b> · mail « texte video » : même texte, relancé.</div>
-<div><b>19/11, après-midi</b> · version raccourcie : <b>45 secondes maximum</b>, 5 blocs, hooks proposés, AB test possible. C'est la version qui prime.</div>
-<div><b>19/11, soir</b> · lien SwissTransfer avec les visuels produits, dans le mail de HWA (je ne l'ai pas ouvert).</div>
-<div><b>09/11 et 17/11</b> · fil à part : HWA est « chaud » pour l'affiliation Diggeur ; Alexis attend leur budget, le lien d'affiliation, le taux et la durée.</div>
-</div></div>
-<p class="sm" style="margin-top:14px">Pas dans leurs mails : le budget, la date de livraison, la date de post.</p>
-<p class="lead" style="margin:32px 0 14px;font-size:19px">Les infos, une par une. Ouvre un groupe : « À dire » (dans la vidéo), « Je laisse » (pas dite), « ? » (question à leur poser). « Ma note » sert à écrire à côté.</p>
-<div id="faits"></div></div></section>
+<header class="hero">
+<span class="etiquette">Human With Attitude · Black Friday</span>
+<h1>Ce que HWA attend de ta vidéo</h1>
+<p>Leur brief du 19/11 (le plus récent), en clair. De quoi écrire ton script sur ton carnet, puis le dire.</p>
+</header>
 
-<section id="lecons"><span class="etiquette">2 · Ce qui plaît à HWA</span><h2>Leurs mots, sur tes vidéos d'avant</h2>
-<p><b>Le « je » gagne.</b> 31/03, sur les jeans Onigiri : « la différence de performance semble venir surtout de la phrase d'accroche », une accroche « très personnelle et basée sur ton expérience ».</p>
-<p><b>Naturel avant tout.</b> 31/03 : « totalement libre sur le format, le ton, la mise en scène ». 19/11 : « une trame, pas un texte à réciter mot pour mot ».</p>
-<p><b>Propre, premium, naturel.</b> 15/09 : pièces bien repassées, cordons rentrés, « effet froissé » à éviter.</p>
-<p><b>La matière compte pour eux.</b> 31/03 et 15/09 : 100 % coton, fabriqué au Portugal, à garder quand ça tient.</p>
-<p><b>Ils veulent tester.</b> 19/11 : deux hooks sur la même vidéo, à la suite, pour voir lequel performe.</p>
-<p class="mot">« Mon / je / perso » dès les premières secondes.</p>
-<p class="sm">Leur consigne du 31/03, à garder absolument.</p></section>
+<section><span class="etiquette">Les 5 chiffres à connaître</span>
+<div class="carte">
+<div class="chiffre"><span class="gros">26/11</span><p><b>Le drop</b> : jeudi à 19 h. <b>Early access dès 17 h</b> pour ceux qui s'inscrivent sur le site HWA.</p></div>
+<div class="chiffre"><span class="gros">45 s</span><p><b>Maximum.</b> Vertical 9:16, Reel Instagram. Grosse accroche dès les 2 premières secondes.</p></div>
+<div class="chiffre"><span class="gros">39 €</span><p><b>Dès 39 € d'achat = 1 participation</b> au tirage au sort du voyage. Plus le panier est gros, plus les chances montent.</p></div>
+<div class="chiffre"><span class="gros">2</span><p><b>Le voyage à Tokyo est pour 2 personnes</b> : vols aller-retour et hébergement inclus.</p></div>
+<div class="chiffre"><span class="gros">×2</span><p><b>Participations doublées</b> pendant l'early access (26/11, 17 h à 19 h). Commandes valables du 26/11 au 11/12.</p></div>
+</div></section>
 
-<section id="da"><span class="etiquette">3 · Direction artistique</span><h2>Leur univers, tes choix</h2>
-<p>Dans leur PDF : noir, blanc cassé, un seul accent taupe, des étiquettes en capitales espacées, une photo éditoriale posée (intérieur vintage, murs rayés, bois, denim marine avec une touche de rouge). Dans leurs mails : « très propre, assez premium et naturel », lumière naturelle, image nette, son clair.</p>
-<div class="zone"><div class="pal">
-<div><i style="background:#101010"></i><span>#101010<br>noir</span></div>
-<div><i style="background:#f8f8f8"></i><span>#f8f8f8<br>blanc cassé</span></div>
-<div><i style="background:#98846c"></i><span>#98846c<br>taupe, l'accent</span></div>
-<div><i style="background:#e0e0d8"></i><span>#e0e0d8<br>filets</span></div>
-<div><i style="background:#b0001c"></i><span>#b0001c<br>« à ne pas faire »</span></div></div>
-<p class="sm">Couleurs relevées sur leur PDF du 17/11. Les options ci-dessous sont des pistes de ma part : tu choisis, ou tu écris la tienne.</p>
-<div id="dalist" style="margin-top:18px"></div></div></section>
-
-<section id="script"><span class="etiquette">4 · Ton script</span><h2>C'est toi qui écris</h2>
-<p>Dans chaque bloc : ce que tu dis, et ce qu'on voit. Les pastilles passent au vert quand ton texte couvre l'info obligatoire. Le budget de temps est indicatif : la marque veut 45 secondes au total.</p>
-<div class="zone"><div id="blocs"></div>
-<div class="carte" style="margin-top:14px"><span class="lbl">Tes notes en vrac</span><textarea id="gn" placeholder="Idées, doutes, phrases à garder pour plus tard…"></textarea></div>
-<div class="jauge" aria-live="polite">
-<div class="ligne"><b id="jA">Version A : 0 s</b><span id="jB" class="cnt"></span></div>
-<div class="barre"><i id="barA"></i></div>
-<div class="ligne"><span class="cnt" id="jM">0 mot</span><label class="cnt">Mots par seconde <input type="number" id="wps" step="0.1" min="1.5" max="4" value="2.7" style="width:84px;min-height:44px;padding:6px"></label></div>
-<div class="actions"><button class="plein" id="tourner" type="button">Tourner (prompteur)</button><button id="copier" type="button">Copier tout</button></div>
-</div></div></section>
-
-<section id="regler"><span class="etiquette">5 · À régler avant de tourner</span><h2>Ce que les mails ne disent pas</h2>
-<div class="zone"><div class="carte" id="ql"></div>
-<div class="avis"><span class="lbl">Mon avis (peu de preuves, à toi de trancher)</span>
-<ul>
-<li><b>Six choses en 45 s.</b> À ~2,7 mots par seconde, ça fait ~120 mots en tout. Hook, collection, bundles, voyage, coup de cœur, date : la marque en exige quatre (date, collection, bundles, voyage), donc le coup de cœur est ce qui coince en premier.</li>
-<li><b>Un concours avec achat obligatoire.</b> Dès 39 €, tirage au sort. « Gagner un voyage » dit seul peut sonner gratuit : la vérité (acheter pour participer) tient en quelques mots et colle à ta règle des hooks sincères.</li>
-<li><b>Partenariat rémunéré.</b> Rappel général, à vérifier avec eux : en France la mention « Publicité » ou « Collaboration commerciale » est obligatoire sur un contenu sponsorisé.</li>
-<li><b>Ton angle le plus fort.</b> Tu es vraiment au Japon : c'est vrai, c'est visuel, et c'est le « je » que leur mail du 31/03 dit avoir le mieux marché.</li>
-</ul></div></div></section>
+<section><span class="etiquette">1 · Le déroulé, dans leur ordre</span>
+<div class="carte">
+<div class="spec"><span class="num">Hook · environ 0 à 4 s</span><h3>Le voyage au Japon, tout de suite</h3><ul><li>Le voyage à gagner passe <b>en premier</b>, dès la première seconde.</li><li>Tu y reviens à la fin pour dire comment participer.</li></ul><p class="cite">Leurs idées, à dire avec tes mots : « Pour leur prochain drop, Human With Attitude vous fait gagner un voyage au Japon ! » · « Pour son Black Friday, HWA vous fait gagner un voyage au Japon pour deux ! » · « Moi je suis déjà au Japon, mais HWA a décidé de vous y envoyer aussi ! » · « Attendez… HWA fait gagner un voyage à Tokyo pour son prochain drop ?! »</p></div>
+<div class="spec"><span class="num">01 · environ 8 s</span><h3>La nouvelle collection</h3><ul><li>Leur plus gros drop de l'année.</li><li>Ensembles en denim aux coupes travaillées, doudounes, chemises, vestes effet cuir, et plein d'autres nouveautés.</li><li>Tu fais comme si tu la découvrais, avec leurs visuels à l'écran et tes réactions.</li></ul><p class="cite">Leur exemple : « HWA lance une nouvelle collection avec plein de pièces incroyables : des vestes, des doudounes, des ensembles en denim… »</p></div>
+<div class="spec"><span class="num">02 · environ 5 s</span><h3>Les bundles</h3><ul><li>Des packs exclusifs, avec des <b>réductions et des cadeaux offerts</b>.</li><li>Une opération qu'ils ne font pas toute l'année.</li></ul><p class="cite">Leur exemple : « Ils proposent aussi une offre spéciale : les bundles, des packs exclusifs avec des réductions et des cadeaux offerts. »</p></div>
+<div class="spec"><span class="num">03 · environ 8 s</span><h3>Le voyage à Tokyo</h3><ul><li>Tirage au sort parmi les commandes : <b>un voyage à Tokyo pour 2</b> (vols + hébergement).</li><li><b>Dès 39 € d'achat, tu participes.</b></li><li>En plus, si tu as la place : participations doublées pendant l'early access, commandes du 26/11 au 11/12.</li></ul><p class="cite">Leur exemple : « Et en plus, dès 39 € d'achat, tu participes au tirage au sort pour gagner un voyage à Tokyo pour 2 personnes ! »</p><div class="moi"><b>Mon repère.</b> Le minimum à dire : Tokyo pour 2, et dès 39 €. Le reste (x2, dates) peut tenir en une demi-phrase ou aller en légende.</div></div>
+<div class="spec"><span class="num">04 · environ 9 s</span><h3>Ton coup de cœur</h3><ul><li>Tu choisis <b>1 ou 2 pièces</b> que tu préfères, avec le visuel à l'écran, et tu expliques pourquoi.</li><li>Tu peux dire que tu les prendras dès ton retour en France.</li></ul><p class="cite">Leur exemple : « Moi perso, j'ai vraiment kiffé cette pièce… »</p></div>
+<div class="spec"><span class="num">05 · environ 8 s</span><h3>La date et l'appel</h3><ul><li><b>Jeudi 26 novembre à 19 h.</b></li><li><b>Early access dès 17 h</b> en s'inscrivant sur leur site.</li></ul><p class="cite">Leur exemple : « Ça drop le jeudi 26 novembre à 19 h, mais tu peux avoir accès à la collection dès 17 h en early access en t'inscrivant sur leur site ! »</p></div>
 </div>
+<p class="petit">Les durées sont mon découpage, pas le leur : environ 42 s, soit ~120 mots à ~2,7 mots par seconde. Leurs phrases d'exemple ne sont pas à réciter : leur mail dit « une trame, pas un texte à réciter mot pour mot ».</p>
+</section>
+
+<section><span class="etiquette">2 · Le tournage</span>
+<div class="carte">
+<div class="spec"><span class="num">Lieu</span><h3>Un décor japonais identifiable</h3><ul><li>Au moins pour le premier plan, en extérieur si possible.</li><li>Toi : Osaka. Ils le savent.</li></ul></div>
+<div class="spec"><span class="num">Image et son</span><h3>Propre et naturel</h3><ul><li>Vertical 9:16.</li><li>Bonne lumière, naturelle si possible, image nette.</li><li>Son clair, sans trop de bruit, surtout dehors.</li></ul></div>
+<div class="spec"><span class="num">Tenue</span><h3>Pas de pièce HWA : c'est permis</h3><ul><li>Leur brief : pièces HWA si possible, <b>sinon des basiques sans marque apparente</b>.</li><li>Toi : basiques, sans aucun logo visible.</li></ul></div>
+<div class="spec"><span class="num">Montage</span><h3>Dynamique, avec leurs visuels</h3><ul><li>Leurs photos et vidéos de la collection s'intègrent pendant que tu parles.</li><li>Elles sont dans le lien SwissTransfer de leur mail du 19/11 au soir (objet « Re: texte video »).</li></ul></div>
+<div class="spec"><span class="num">Ton</span><h3>Toi, comme d'habitude</h3><ul><li>Garde ton style, tes expressions, ton énergie.</li><li>Dès les premières secondes : <b>« mon / je / perso »</b>. Leur mail du 31/03 dit que l'accroche personnelle a le mieux marché.</li></ul></div>
+</div></section>
+
+<section><span class="etiquette">3 · À ne pas faire</span>
+<div class="carte">
+<div class="spec"><span class="num">Marques</span><h3>Montrer ou citer une autre marque</h3><ul><li>C'est écrit dans leur PDF, page 2, en rouge.</li></ul></div>
+<div class="spec"><span class="num">Prononciation</span><h3>« You-man », pas « Who-man »</h3><ul><li>Human With Attitude se dit « You-man ». Rappelé le 15/09, le 17/11 et le 19/11.</li></ul></div>
+<div class="spec"><span class="num">Lieu</span><h3>Ne dis pas que tu es à Tokyo</h3><div class="non"><b>Attention.</b> Tu es à Osaka. Le voyage à gagner, lui, est à Tokyo : « je suis déjà au Japon » est vrai, « je suis à Tokyo » ne l'est pas.</div></div>
+<div class="spec"><span class="num">Concours</span><h3>Un jeu avec achat obligatoire</h3><ul><li>Réservé aux majeurs résidant en France métropolitaine (mention de leur PDF).</li><li>« Gagne un voyage » dit seul peut sonner gratuit : il faut acheter, dès 39 €.</li></ul></div>
+</div></section>
+
+<section><span class="etiquette">4 · Le test A/B</span>
+<div class="carte">
+<div class="spec"><span class="num">Option proposée par eux</span><h3>Deux hooks différents, même vidéo derrière</h3><ul><li>Tu enregistres deux accroches, l'une après l'autre, sur la même vidéo, et ils voient laquelle marche mieux.</li><li>Leur mail : « c'est pas forcément ça, tu dis ce que tu sens ».</li></ul><div class="moi"><b>Mon repère.</b> Deux axes possibles : A = la promesse (le voyage), B = toi (« je suis déjà au Japon »). Ton choix, tu peux aussi n'en faire qu'un.</div></div>
+</div></section>
+
+<section><span class="etiquette">5 · Ce que leurs mails ne disent pas</span>
+<div class="carte">
+<div class="spec"><span class="num">À leur demander</span><h3>4 points en suspens</h3><ul><li><b>Date et heure de livraison</b> de la vidéo (le drop est jeudi).</li><li><b>Date et heure de post</b>, et si c'est en co-post.</li><li><b>Mention légale du jeu</b> : à l'écran ou en légende ?</li><li><b>Budget</b> de cette collab : absent de leurs mails.</li></ul></div>
+</div>
+<p class="petit">La page « pour eux » pose ces questions et montre ton plan : <a href="hwa/">ouvrir la version pour HWA</a>.</p>
+</section>
+
 </main>
-
-<div id="prompteur" role="dialog" aria-label="Prompteur">
-<div class="top"><button id="pA" type="button" aria-pressed="true">Version A</button><button id="pB" type="button" aria-pressed="false">Version B</button><button id="pPlay" type="button">Défiler</button>
-<label class="sm" style="color:#ccc;font:500 14px var(--police)">Vitesse <input id="pVit" type="range" min="1" max="8" value="3"></label>
-<button id="pX" type="button" style="margin-left:auto">Fermer</button></div>
-<div class="txt" id="pTxt"></div></div>
-
-<script>
-
-const $=s=>document.querySelector(s);
-const FAITS=[
- ["Le drop","d_date","Jeudi 26 novembre à 19 h.","mail 17/11 et 19/11"],
- ["Le drop","d_early","Early access dès 17 h pour les inscrits : inscription sur le site HWA pour accéder à la collection 2 heures avant tout le monde.","mail 17/11 et 19/11"],
- ["La collection","c_gros","Leur plus gros drop de l'année : ensembles en denim aux coupes travaillées, doudounes, chemises, vestes effet cuir, et plein d'autres nouveautés.","PDF et mail 17/11"],
- ["La collection","c_react","Tu fais comme si tu découvrais la collection, avec les visuels fournis et tes réactions naturelles.","mail 17/11"],
- ["La collection","c_fav","Tu choisis une ou deux pièces préférées et tu expliques pourquoi.","mail 17/11 et 19/11 (bloc « ton coup de cœur »)"],
- ["La collection","c_fr","Piste de la marque : dire que tu es au Japon mais que tu sais déjà ce que tu prendras en rentrant en France.","mail 17/11 et 19/11"],
- ["Les bundles","b_pack","Packs exclusifs avec des réductions et des cadeaux offerts : une opération qu'on ne propose pas toute l'année.","PDF et mail 19/11"],
- ["Le voyage à Tokyo","v_prix","Tirage au sort : un voyage à Tokyo pour 2 personnes, vols aller-retour et hébergement inclus.","PDF et mail 17/11"],
- ["Le voyage à Tokyo","v_39","Dès 39 € d'achat = une participation. Plus le panier est élevé, plus les chances augmentent.","PDF et mail 17/11"],
- ["Le voyage à Tokyo","v_x2","Pendant l'early access du 26/11 (17 h à 19 h), les participations sont doublées.","PDF et mail 17/11"],
- ["Le voyage à Tokyo","v_dates","Commandes du 26/11 au 11/12 éligibles.","PDF et mail 17/11"],
- ["Le voyage à Tokyo","v_legal","Jeu avec achat obligatoire, réservé aux majeurs résidant en France métropolitaine. Détail sur humanwithattitude.com.","PDF (bas de page 2)"],
- ["Format et consignes","k_45","45 secondes maximum, plus court, plus direct, plus dynamique.","mail 19/11 (le 17/11 : « assez courte »)"],
- ["Format et consignes","k_916","Format vertical 9:16, Reel Instagram.","PDF et mails"],
- ["Format et consignes","k_hook","Grosse accroche dès les 2 premières secondes ; le voyage dès le début, rappelé à la fin.","PDF et mail 17/11"],
- ["Format et consignes","k_japon","Tourné au Japon, au moins le premier plan, dans un lieu très identifiable comme japonais.","PDF et mails"],
- ["Format et consignes","k_look","Bonne lumière (naturelle si possible), image nette, son clair, surtout dehors.","PDF et mail 17/11"],
- ["Format et consignes","k_tenue","Tenue soignée dans ton style : pièces HWA si possible, sinon basiques sans marque apparente.","PDF et mails"],
- ["Format et consignes","k_mont","Montage dynamique, visuels produits intégrés pendant que tu parles.","PDF et mail 17/11"],
- ["Format et consignes","k_trame","Le déroulé est une trame, pas un texte à réciter : garde ton style et ton énergie.","mail 19/11"],
- ["Format et consignes","k_ab","Option : deux hooks différents sur la même vidéo, à la suite, pour un AB test.","mail 19/11"],
- ["Format et consignes","k_pron","« You-man » with Attitude, pas « Who-man ».","15/09, 17/11 et 19/11"],
- ["À ne pas faire","n_marques","Montrer ou citer d'autres marques.","PDF page 2"]
-];
-const HOOKS_MARQUE=["« Pour leur prochain drop, Human With Attitude vous fait gagner un voyage au Japon ! »","« Pour son Black Friday, HWA vous fait gagner un voyage au Japon pour deux ! »","« Moi je suis déjà au Japon, mais HWA a décidé de vous y envoyer aussi ! »","« Attendez… HWA fait gagner un voyage à Tokyo pour son prochain drop ?! »"];
-const DA=[
- ["da_lieu","Le lieu du premier plan",[["a","Lieu emblématique, plan large, toi au centre : lisible en 2 secondes"],["b","Rue avec enseignes, tu avances vers la caméra : plus vivant"],["c","Lieu calme (temple, jardin) : ta voix porte, rythme plus posé"]]],
- ["da_lum","La lumière",[["a","Jour, lumière naturelle (le plus proche de leur demande)"],["b","Fin de journée, lumière chaude"],["c","Nuit, néons et enseignes : très Japon, mais image plus dure à garder nette"]]],
- ["da_tenue","La tenue",[["a","Une ou des pièces HWA que tu as déjà"],["b","Basiques sans marque visible"]]],
- ["da_dec","Comment tu découvres la collection",[["a","Tu scrolles les visuels sur ton téléphone, filmé de ton point de vue : la réaction est vraie"],["b","Visuels plein écran en montage, ta voix par-dessus"],["c","Mix : ta tête en coin, visuels en plein cadre"]]],
- ["da_ryth","Le rythme",[["a","Une coupe toutes les 2 à 3 secondes, un visuel produit par phrase"],["b","Plans plus longs sur toi, visuels en inserts courts"]]],
- ["da_st","Les sous-titres",[["a","Sobres, blancs, mots-clés mis en valeur (date, 39 €, Tokyo)"],["b","Mots-clés dans l'accent beige/taupe de leur brief"]]],
- ["da_fin","La dernière image",[["a","Carte claire : jeudi 26/11, 19 h, early access 17 h, dès 39 €"],["b","Toi face caméra qui rappelles la date, carte en 1 seconde"]]],
- ["da_legal","La mention du jeu (achat obligatoire, majeurs, France métropolitaine)",[["a","En petit sur la dernière carte"],["b","Dans la légende seulement"],["c","À demander à HWA"]]]
-];
-const BLOCS=[
- ["hookA","Hook A · la promesse",4,"Quelle phrase donne envie de rester 3 secondes de plus ? Elle doit contenir le voyage.",[["Japon ou Tokyo",/japon|tokyo/i],["voyage ou gagner",/voyage|gagn/i]],"Premier plan au Japon, lieu identifiable, toi dans le cadre."],
- ["hookB","Hook B · toi (AB test, facultatif)",4,"Même vidéo derrière. Le même fait, mais en partant de toi et de ce que tu vis là-bas.",[["Japon ou Tokyo",/japon|tokyo/i],["voyage ou gagner",/voyage|gagn/i]],""],
- ["coll","01 · La nouvelle collection",8,"Quelles pièces cites-tu ? Une phrase suffit : le détail vient avec ton coup de cœur.",[["denim, doudounes, vestes…",/denim|doudoune|chemise|veste|collection|ensemble/i]],"Visuels produits à l'écran pendant que tu parles."],
- ["bund","02 · Les bundles",5,"En quoi c'est spécial ? Réductions et cadeaux, et pas toute l'année.",[["bundles ou packs",/bundle|pack/i],["réductions ou cadeaux",/r[ée]duc|cadeau|offert/i]],""],
- ["voy","03 · Le voyage à Tokyo",8,"Comment l'expliquer en 8 secondes sans que ça sonne gratuit ? Il faut acheter, dès 39 €.",[["Tokyo",/tokyo/i],["pour 2",/pour 2|pour deux|à deux|2 personnes|deux personnes/i],["dès 39 €",/39/],["tirage au sort",/tirage|participe|participation/i]],""],
- ["coeur","04 · Ton coup de cœur",9,"Quelle pièce, et pourquoi toi ? Ta vraie raison : la coupe, la matière, ce que tu portes déjà.",[],"Le visuel de la pièce choisie."],
- ["cta","05 · Le drop et l'appel",8,"Qu'est-ce que tu veux qu'on fasse en finissant ? S'inscrire avant 17 h jeudi.",[["jeudi 26",/26|jeudi/i],["19 h",/19\s?h|19:00|19 heures/i],["early access 17 h",/17\s?h|early/i],["inscription au site",/inscri|site/i]],"Carte finale lisible."]
-];
-const QL=[
- ["r_liv","Date de livraison de la vidéo : pas dite dans les mails. Le drop est jeudi 26/11 : à leur demander."],
- ["r_post","Date et heure de post : avant le drop, le jour J, pendant l'early access ? À demander."],
- ["r_bud","Budget de ce Black Friday : absent des mails lus. À confirmer avant de tourner (voir le dernier deal HWA dans tes mails de mars)."],
- ["r_co","Co-post (collab Instagram) ou publication chez eux seulement : en mars « on verra laquelle on co-poste »."],
- ["r_leg","Mention légale du jeu à l'écran ou en légende : demander ce qu'ils exigent."],
- ["r_viz","Ouvrir les visuels du mail du 19/11 (soir) et choisir la ou les pièces de ton coup de cœur."],
- ["r_val","Leur envoyer le script avant de tourner ? Leur mail dit « une trame », à toi de voir. Rien n'est envoyé par moi."],
- ["r_dig","Affiliation Diggeur : fil séparé, HWA attend la suite d'Alexis (budget, lien, taux, durée). Ne pas mélanger avec cette vidéo."]
-];
-
-let S={f:{},b:{},da:{},q:{},gn:"",wps:2.7};
-const KEY="hwa-bf-2026";
-let docRef=null,tSave=null;
-
-function mots(t){return (t||"").trim().split(/\s+/).filter(Boolean).length}
-function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-
-/* ---- rendu statique ---- */
-function rendreFaits(){
-  let h="",g="";
-  FAITS.forEach(([grp,id,t,src])=>{
-    if(grp!==g){if(g)h+="</div></details>";h+=`<details class="gd" data-g="${esc(grp)}"><summary><span>${esc(grp)}</span><span class="gc"></span></summary><div class="grp">`;g=grp}
-    h+=`<div class="f" data-id="${id}"><div class="t">${esc(t)}</div><div class="src">Source : ${esc(src)}</div>
-    <div class="bt"><button data-st="dire" type="button" aria-pressed="false">À dire</button><button data-st="non" type="button" aria-pressed="false">Je laisse</button><button data-st="q" type="button" aria-pressed="false">?</button></div>
-    <details class="n"><summary>Ma note</summary><textarea data-n="${id}" placeholder="Ce que tu en penses…"></textarea></details></div>`;
-  });
-  h+="</div></details>";
-  h+=`<details class="gd"><summary><span>Hooks proposés par la marque (19/11)</span><span class="gc">4</span></summary><div class="grp"><div class="carte"><ul>${HOOKS_MARQUE.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p class="sm">Leur mail précise : « c'est pas forcément ça, tu dis ce que tu sens ». Ils servent d'idées, pas de texte.</p></div></div></details>`;
-  $("#faits").innerHTML=h;
-}
-function rendreDA(){
-  $("#dalist").innerHTML=DA.map(([id,t,opts])=>`<details class="gd" data-da="${id}"><summary><span>${esc(t)}</span><span class="gc">à choisir</span></summary><div class="grp"><div class="opts">${opts.map(([k,l])=>`<button type="button" data-o="${k}" aria-pressed="false">${esc(l)}</button>`).join("")}</div><details class="n"><summary>Ma version</summary><textarea data-dn="${id}" placeholder="Ton idée à toi…"></textarea></details></div></details>`).join("");
-}
-function rendreBlocs(){
-  $("#blocs").innerHTML=BLOCS.map(([id,t,bud,q,chips,img])=>`<div class="bloc" data-b="${id}"><div class="hd"><h3>${esc(t)}</h3><span class="cnt" data-cnt>0 mot · ~${bud} s de budget</span></div>
-  <p class="q">${esc(q)}</p>
-  <div class="chips">${chips.map(([l])=>`<span class="chip">${esc(l)}</span>`).join("")}</div>
-  <div class="deux"><div class="le"><span class="lbl">Ce que je dis</span><textarea data-v="${id}" placeholder="Tes mots, comme tu les dirais"></textarea></div><div class="le"><span class="lbl">Ce qu'on voit</span><textarea data-i="${id}" placeholder="${esc(img||"Plan, visuel, texte à l'écran")}"></textarea></div></div>
-  <div class="lint" data-lint></div></div>`).join("");
-}
-function rendreQL(){
-  $("#ql").innerHTML=QL.map(([id,t])=>`<label class="q-l"><input type="checkbox" data-q="${id}"><span>${esc(t)}</span></label>`).join("");
-}
-
-/* ---- état -> écran ---- */
-const MARQUES=/\b(nike|adidas|uniqlo|new balance|carhartt|levi'?s|zara|salomon|asics|casio|g-shock|on running|north face|diadora|puma|converse|vans|st[uü]ssy|supreme|arc'?teryx|patagonia|dickies|lacoste|ralph lauren|celio|h&m|primark|decathlon|jd sports|footshop|asos)\b/i;
-const HYPE=/\b(ultra|de fou|de ouf|dingue|ouf|le meilleur|incroyable)\b/i;
-function appliquer(){
-  document.querySelectorAll(".f").forEach(el=>{const id=el.dataset.id,st=(S.f[id]||{}).s||"";el.classList.toggle("dire",st==="dire");el.classList.toggle("non",st==="non");el.classList.toggle("q",st==="q");
-    el.querySelectorAll("[data-st]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.st===st));
-    const ta=el.querySelector("[data-n]");ta.value=(S.f[id]||{}).n||"";el.querySelector("summary").classList.toggle("rempli",!!ta.value)});
-  document.querySelectorAll("details.gd[data-g]").forEach(d=>{const fs=d.querySelectorAll(".f");const n=[...fs].filter(x=>(S.f[x.dataset.id]||{}).s).length;d.querySelector(".gc").textContent=n?`${n}/${fs.length} notées`:`${fs.length} info${fs.length>1?"s":""}`});
-  document.querySelectorAll("[data-da]").forEach(el=>{const id=el.dataset.da,c=(S.da[id]||{}).c||"";el.querySelectorAll("[data-o]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.o===c));
-    const ta=el.querySelector("[data-dn]");ta.value=(S.da[id]||{}).n||"";el.querySelector("details.n summary").classList.toggle("rempli",!!ta.value);
-    el.querySelector(":scope>summary .gc").textContent=c?"choix "+c.toUpperCase()+(ta.value?" + note":""):(ta.value?"note écrite":"à choisir")});
-  BLOCS.forEach(([id])=>{const b=S.b[id]||{};document.querySelector(`[data-v="${id}"]`).value=b.v||"";document.querySelector(`[data-i="${id}"]`).value=b.i||""});
-  document.querySelectorAll("[data-q]").forEach(c=>c.checked=!!S.q[c.dataset.q]);
-  $("#gn").value=S.gn||"";$("#wps").value=S.wps;
-  calcul();
-}
-function calcul(){
-  const wps=parseFloat(S.wps)||2.7;let rest=0,wA=0,wB=0;
-  BLOCS.forEach(([id,t,bud,q,chips])=>{
-    const txt=(S.b[id]||{}).v||"";const n=mots(txt);
-    if(id==="hookA")wA=n;else if(id==="hookB")wB=n;else rest+=n;
-    const el=document.querySelector(`[data-b="${id}"]`);const s=n/wps;
-    const cnt=el.querySelector("[data-cnt]");cnt.textContent=`${n} mot${n>1?"s":""} · ~${s.toFixed(0)} s sur ~${bud} s de budget`;cnt.classList.toggle("warn",s>bud*1.25);
-    const cs=el.querySelectorAll(".chip");chips.forEach(([l,re],i)=>cs[i].classList.toggle("ok",re.test(txt)));
-    const L=[];
-    if(/who[\s-]?man/i.test(txt))L.push("« Who-man » : la marque veut « You-man ».");
-    const m=txt.match(MARQUES);if(m)L.push(`Autre marque citée (« ${m[0]} ») : HWA demande de n'en citer aucune.`);
-    const lint=el.querySelector("[data-lint]");const h=txt.match(HYPE);
-    lint.className="lint";lint.innerHTML=esc(L.join(" "))+(h?`<div class="info" style="color:var(--warn)">Mot « ${esc(h[0])} » : tes chiffres donnent moins d'abonnés avec les mots hype.</div>`:"");
-  });
-  const sA=(wA+rest)/wps,sB=(wB+rest)/wps,tot=wA+rest;
-  $("#jA").textContent=`Version A : ~${sA.toFixed(0)} s sur 45`;
-  $("#jB").textContent=wB?`Version B : ~${sB.toFixed(0)} s`:"";
-  $("#jM").textContent=`${tot} mot${tot>1?"s":""} (version A)`;
-  const bar=$("#barA");bar.style.width=Math.min(100,sA/45*100)+"%";bar.style.background=sA>50?"var(--bad)":sA>45?"var(--warn)":"var(--ok)";
-}
-function cd(){const t=new Date("2026-11-26T19:00:00+01:00")-Date.now();const j=Math.max(0,Math.ceil(t/864e5));$("#cdn").textContent=j;$("#cd").textContent=t<=0?"Le drop est passé : jeudi 26/11, 19 h.":`jour${j>1?"s":""} avant le drop de jeudi 26/11 à 19 h. Early access dès 17 h pour les inscrits.`}
-
-/* ---- sauvegarde ---- */
-function sauver(){
-  try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
-  clearTimeout(tSave);
-  if(!docRef){$("#statut").textContent="Enregistré sur cet appareil.";return}
-  $("#statut").textContent="Enregistrement…";
-  tSave=setTimeout(async()=>{try{await docRef.set({...S,maj:new Date().toISOString()});$("#statut").textContent="Enregistré."}catch(err){$("#statut").textContent="Enregistré sur cet appareil (la synchro a échoué)."}},600);
-}
-
-/* ---- événements ---- */
-document.addEventListener("click",e=>{
-  const st=e.target.closest("[data-st]");
-  if(st){const id=st.closest(".f").dataset.id;const o=S.f[id]||(S.f[id]={s:"",n:""});o.s=o.s===st.dataset.st?"":st.dataset.st;appliquer();sauver();return}
-  const op=e.target.closest("[data-o]");
-  if(op){const id=op.closest("[data-da]").dataset.da;const o=S.da[id]||(S.da[id]={c:"",n:""});o.c=o.c===op.dataset.o?"":op.dataset.o;appliquer();sauver()}
-});
-document.addEventListener("input",e=>{
-  const t=e.target;
-  if(t.dataset.n){(S.f[t.dataset.n]||(S.f[t.dataset.n]={s:"",n:""})).n=t.value;t.closest("details").querySelector("summary").classList.toggle("rempli",!!t.value)}
-  else if(t.dataset.dn){(S.da[t.dataset.dn]||(S.da[t.dataset.dn]={c:"",n:""})).n=t.value;t.closest("details").querySelector("summary").classList.toggle("rempli",!!t.value)}
-  else if(t.dataset.v){(S.b[t.dataset.v]||(S.b[t.dataset.v]={v:"",i:""})).v=t.value;calcul()}
-  else if(t.dataset.i){(S.b[t.dataset.i]||(S.b[t.dataset.i]={v:"",i:""})).i=t.value}
-  else if(t.dataset.q){S.q[t.dataset.q]=t.checked}
-  else if(t.id==="gn"){S.gn=t.value}
-  else if(t.id==="wps"){S.wps=t.value;calcul()}
-  else return;
-  sauver();
-});
-
-function texteScript(v){
-  const ordre=BLOCS.filter(b=>b[0]!=="hookA"&&b[0]!=="hookB").map(b=>b[0]);
-  const hook=(S.b[v==="B"?"hookB":"hookA"]||{}).v||"";
-  return [hook].concat(ordre.map(id=>(S.b[id]||{}).v||"")).filter(x=>x.trim()).join("\n\n");
-}
-function toutLeTexte(){
-  let o="HWA BLACK FRIDAY · SCRIPT DE DAMIEN\n\n";
-  BLOCS.forEach(([id,t])=>{const b=S.b[id]||{};if((b.v||"").trim()||(b.i||"").trim())o+=`## ${t}\nJe dis : ${b.v||"(vide)"}\nOn voit : ${b.i||"(vide)"}\n\n`});
-  o+="## Direction artistique\n";
-  DA.forEach(([id,t,opts])=>{const d=S.da[id]||{};const c=opts.find(x=>x[0]===d.c);if(c||d.n)o+=`- ${t} : ${c?c[1]:"(pas choisi)"}${d.n?" · ma version : "+d.n:""}\n`});
-  o+="\n## Infos de la marque\n";
-  const E={dire:"À DIRE",non:"JE LAISSE",q:"QUESTION"};
-  FAITS.forEach(([g,id,t])=>{const f=S.f[id]||{};if(f.s||f.n)o+=`- [${E[f.s]||"note"}] ${t}${f.n?" · "+f.n:""}\n`});
-  o+="\n## À régler\n";QL.forEach(([id,t])=>{o+=`- [${S.q[id]?"x":" "}] ${t}\n`});
-  if(S.gn)o+=`\n## Notes en vrac\n${S.gn}\n`;
-  return o;
-}
-$("#copier").onclick=async()=>{const t=toutLeTexte();try{await navigator.clipboard.writeText(t);$("#copier").textContent="Copié";}catch(e){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");$("#copier").textContent="Copié"}catch(_){$("#copier").textContent="Copie impossible"}a.remove()}setTimeout(()=>$("#copier").textContent="Copier tout",1800)};
-
-/* prompteur */
-let pv="A",pt=null;
-function pRendre(){$("#pTxt").textContent=texteScript(pv)||"Ton script est vide pour l'instant.";$("#pA").setAttribute("aria-pressed",pv==="A");$("#pB").setAttribute("aria-pressed",pv==="B")}
-function pStop(){clearInterval(pt);pt=null;$("#pPlay").textContent="Défiler"}
-$("#tourner").onclick=()=>{$("#prompteur").classList.add("on");pRendre();$("#pTxt").scrollTop=0};
-$("#pX").onclick=()=>{pStop();$("#prompteur").classList.remove("on")};
-$("#pA").onclick=()=>{pv="A";pRendre()};$("#pB").onclick=()=>{pv="B";pRendre()};
-$("#pPlay").onclick=()=>{if(pt){pStop();return}$("#pPlay").textContent="Pause";pt=setInterval(()=>{$("#pTxt").scrollTop+=parseInt($("#pVit").value,10)/2},30)};
-$("#pTxt").onclick=()=>{if(pt)pStop()};
-
-/* démarrage */
-rendreFaits();rendreDA();rendreBlocs();rendreQL();cd();setInterval(cd,6e4);
-try{const l=JSON.parse(localStorage.getItem(KEY)||"null");if(l)S={...S,...l}}catch(e){}
-appliquer();$("#statut").textContent="Enregistré sur cet appareil.";
-(async()=>{
-  try{const db=await window.claude?.use?.("db");if(db){docRef=db.doc("script/damien");const s=await docRef.get();const d=s&&(s.data?s.data():s);if(d&&(d.b||d.f||d.da)){S={...S,...d};appliquer()}$("#statut").textContent="Enregistré automatiquement."}}catch(e){}
-})();
-
-</script>
 <script>
 (function(){const m=document.querySelector('main');if(!m)return;const secs=[...m.querySelectorAll('section')].filter(s=>s.querySelector(':scope>.etiquette'));
 if(secs.length<3)return;const nav=document.createElement('nav');nav.className='lis-nav';
@@ -639,12 +270,6 @@ t.onclick=function(){fixe=!fixe;b.classList.toggle('fond-fixe',fixe);t.textConte
 var idle,pause=function(p){b.classList.toggle('fond-pause',p)},reveil=function(){pause(false);clearTimeout(idle);idle=setTimeout(function(){pause(true)},180000)};
 ['pointermove','scroll','keydown','touchstart'].forEach(function(e){addEventListener(e,reveil,{passive:true})});reveil();
 document.addEventListener('visibilitychange',function(){pause(document.hidden)})})();
-
-</script><script>
-/* Récit : un filet bleu marque le paragraphe en cours de lecture (« tu es ici »). Aucune perte de contraste. Désactivé si mouvement réduit ou ?etat (juge). */
-(function(){var nom=document.getElementById('chap-nom'),pct=document.getElementById('pct'),secs=[].slice.call(document.querySelectorAll('body.g-recit .texte section'));if(nom&&secs.length){var ti=nom.textContent;function lis(){var y=scrollY+innerHeight*.4,k=-1;secs.forEach(function(s,i){if(s.offsetTop+s.offsetParent.offsetTop<=y)k=i});nom.textContent=k<0?ti:(k+1)+'. '+secs[k].querySelector('h2').textContent;var h=document.documentElement.scrollHeight-innerHeight;pct.textContent=Math.round(h>0?100*scrollY/h:0)+' %'}if(!/[?&](etat|juge)/.test(location.search)){addEventListener('scroll',lis,{passive:true});lis()}}if(/[?&](etat|juge)/.test(location.search)||matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
-var ps=[].slice.call(document.querySelectorAll('body.g-recit .texte p'));
-var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('lu',e.isIntersecting)})},{rootMargin:'-38% 0px -38% 0px'});ps.forEach(function(p){io.observe(p)})})();
 
 </script>
 </body></html>
